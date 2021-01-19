@@ -1,0 +1,262 @@
+    body {
+        font-family: "Avenir", sans-serif;
+    }
+    #hero {
+        background-image: url('../assets/calm.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 55em;
+        margin-top: 7em;
+    }
+    .intro {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    h3 {
+        text-align: center;
+    }
+    .preamble {
+        padding: 100px 140px;
+        width: 50%;
+        font-size: 1.5em;
+        background-color: rgb(223, 223, 223);
+    }
+    .summary {
+        padding: 100px 140px;
+        width: 50%;
+        font-size: 4em;
+        background-color: rgb(37, 37, 37);
+        color: rgb(235, 235, 235);
+        text-align: center;
+    }
+    img {
+        border-radius: 15%;
+        width: 80%;
+        height: 80%;
+    }
+    img:hover {
+        transform: scale(1.1);
+        opacity: 1;
+        cursor: pointer;
+    }
+    .explanation {
+        order: 2;
+        flex-grow: 1;
+        width: 200px;
+        padding: 30px;
+        background-color: #fff;
+    } 
+    .participation{
+        order: 1;
+        flex-grow: 2;
+        width: 200px;
+        padding: 30px;
+        background-color: #fff;
+    } 
+    .benefits {
+        order: 4;
+        flex-grow: 1;
+        width: 200px;
+        padding: 30px;
+        background-color:white;
+    } 
+    .requirements {
+        order: 3;
+        flex-grow: 2;
+        width: 200px;
+        padding: 30px;
+        background-color: #fff;
+    }
+    #yosemite {
+        background-image: url('../assets/halfdome.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 25em;
+    }
+    .sidebar {
+        background-color: rgb(223, 223, 223);
+        display: flex;
+    }
+    .sidebar ul li {
+        list-style-type: none;
+    }
+    .design_selection {
+        order: 1;
+        flex-grow: 1;
+        width: 33.3%;
+        text-align: center;
+        padding: 30px;
+    }
+    .design_archives {
+        order: 2;
+        flex-grow: 1;
+        width: 33.3%;
+        background-color: rgb(37, 37, 37);
+        color: rgb(231, 231, 231);
+        padding-top: 30px;
+    }
+    .design_archives ul li {
+        padding: 15px 0;
+    }
+    .design_archives ul {
+        text-align: center;
+    }
+    nav li {
+        margin-right: 30px;
+    }
+    .zen_resources {
+        order: 3;
+        flex-grow: 1;
+        width: 33.3%;
+        text-align: center;
+        padding: 30px;
+    }
+    footer {
+        order: 5;
+        flex-basis: 100%;
+        height: 100px;
+        color: rgb(243, 243, 243);
+        text-align: center;
+        padding: 1.5em 0;
+        font-family: "Avenir", sans-serif;
+    }
+    @media only screen 
+    and (min-width: 1024px) {
+        #hero {
+            margin-left:-22em;
+        }
+    }
+    @media only screen 
+    and (min-width : 768px) 
+    and (max-width : 1024px) { 
+        #hero {
+            margin-top: 14em;
+            margin-left: -15em;
+            height: 40em;
+        }
+        .intro {
+            display: block;
+        }
+        .preamble, .summary {
+            padding: 0px;
+            width: 90%;
+        }
+        .summary {
+            font-size: 2em;
+            padding: 50px;
+            width: 100%;
+        }
+        .preamble {
+            padding: 60px;
+            font-size: 1.5em;
+            width: 100%;
+        }
+        img:hover {
+        transform: scale(1);
+        cursor: default;
+        }
+        .explanation {
+        order: 2;
+        flex-grow: 1;
+        width: 50%;
+        padding: 0 40px 20px;
+        font-size: 1.5em;
+        } 
+        .participation{
+            order: 1;
+            flex-grow: 1;
+            width: 50%;
+            padding: 60px 60px 20px;
+            font-size: 1.5em;
+        } 
+        .benefits {
+            flex-grow: 1;
+            order: 3;
+            padding: 0 80px 20px;
+            font-size: 1.5em;
+        }
+        .requirements {
+            order: 4;
+            flex-grow: 1;
+            width: 100%;
+            padding: 0 60px 60px;
+            font-size: 1.5em;
+        }
+        .sidebar {
+            display: block;
+        }
+        .design_selection, .zen_resources {
+            width: 90%;
+        }
+        .design_archives {
+            width: 100%;
+        }
+        .design_archives ul {
+            width: 90%;
+            margin-top: -1em;
+        }
+    }
+
+    @media only screen 
+    and (min-width : 375px) 
+    and (max-width : 667px) {
+        main {
+            padding: 40px;
+        }
+        #hero {
+            margin-top: 14em;
+            height: 20em;
+            margin-left: -7em;
+        }
+        .intro, .main {
+            display: block;
+        }
+        .preamble, .summary {
+            padding: 0px;
+            width: 76%;
+        }
+        .summary {
+            font-size: 2em;
+            padding: 50px;
+        }
+        .preamble {
+            padding: 50px;
+            font-size: 1.2em;
+        }
+        img:hover {
+        transform: scale(1);
+        cursor: default;
+        }
+        .explanation, .participation, .benefits, .requirements {
+            width: 83%;
+            padding: 20px 40px;
+        }
+        .participation {
+            background-color: rgb(223, 223, 223);
+        }
+        .benefits {
+            background-color: rgb(37, 37, 37);
+            color: rgb(235, 235, 235);
+        }
+        #yosemite {
+            height: 15em;
+        }
+        .sidebar {
+            display: block;
+        }
+        .design_selection, .zen_resources {
+            width: 80%;
+        }
+        .design_archives {
+            width: 100%;
+        }
+        .design_archives ul {
+            width: 80%;
+            margin-top: -1em;
+        }
+    }

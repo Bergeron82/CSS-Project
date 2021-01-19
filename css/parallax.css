@@ -1,0 +1,258 @@
+body {
+    /*background-image: linear-gradient(-90deg, rgb(255, 246, 223), rgb(255, 163, 102));*/
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+}
+header {
+    color: white;
+    background-color: rgb(37, 37, 37);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    min-height: 10px;
+    z-index: 5;
+}
+a {
+    text-decoration: none;
+    font-weight: 800;
+    color: rgb(184, 184, 184);
+}
+a:hover{
+    color: #29ABE2;
+}
+nav { 
+    font-size: 1em;
+    font-weight: bold;
+    font-family: "Avenir", sans-serif;
+    height: 20px;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+nav li {
+    display: inline-block;
+    list-style: outside none none;
+    margin-right: 4em;
+    padding: 0;
+}
+
+nav a {
+    padding: 0.6em 6px;
+    position: relative;
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: rgb(255, 255, 255);
+    z-index: 0;
+    cursor: pointer;
+}
+nav a:before, nav a:after { 
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0px;
+    content: '';
+    background: rgb(61, 83, 90);
+    opacity: 0.5;
+    transition: all 0.3s;
+}
+
+nav a:before { 
+    top: 0px;
+    background-color: rgb(255, 255, 255);
+}
+
+nav a:after { 
+    bottom: 0px;
+    background-color: rgb(255, 255, 255);
+}
+
+nav a:hover:before, nav a:hover:after {
+    height: 100%;
+}
+nav .current a {
+   color: #29ABE2;
+   opacity: 1;
+}
+h1 { 
+    color: rgb(255, 255, 255);
+    padding: 20px 0px 0px 5%;
+    margin-top: 0;
+    float: left;
+    text-transform: none;
+    font-family: "Avenir", sans-serif;
+    font-size: 3em;
+    font-weight: 700;
+}
+.parallax {
+    perspective: 1px;
+    perspective-origin: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-top: 5em;
+    height: 100vh;
+}
+
+.parallax .group {
+    position: relative;
+    height: 100vh;
+    transform-style: preserve-3d;
+}
+
+.parallax .layer {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+}
+
+#mountain1 {
+    fill:#1B2349;
+    transform: translateZ(0.25px) scale(0.75) translateY(-1vh);
+    margin-top: -19em;
+}
+
+#mountain2 {
+    fill:#3F5782;
+    transform: translateZ(0px) scale(1) translateY(-2vh);
+}
+
+#mountain3 {
+    fill:#23448C;
+    transform: translateZ(-0.5px) scale(1.5) translateY(-3vh);
+}
+
+#mountain4 {
+    fill:#9EC7EF;
+    transform: translateZ(-1px) scale(2) translateY(-4vh); 
+}
+
+.mountain2-front {
+    background: #415883;
+    width: 100vw;
+    height: 5vh;
+    position: relative;
+    margin-top: -10px;
+}
+
+.mountain-front {
+    position: relative;
+    margin-top: -10px;
+    background-color: #2A3152;
+    width: 100vw;
+    height: 85vh;
+}
+.mountain-front img {
+    width: 100%;
+    opacity: .2
+
+}
+h2 {
+    font-size: 3em;
+    color: rgb(63, 63, 63);
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 2em;
+}
+h3 {
+    color: rgb(63, 63, 63);
+    margin: 0 auto;
+    text-align: center;
+}
+.parallax-text {
+    width: 60%;
+    padding: 30px;
+    background-color: white;
+    font-family: "Avenir", sans-serif;
+    margin: 0 auto 1em;
+    border-radius: 10px;
+    font-size: 1.2em;
+}
+blockquote {
+    width: 50%;
+    margin: 0 auto;
+    font-size: 1.5em;
+    
+}
+section {
+    padding: 30px;
+    font-family: "Avenir", sans-serif;
+    margin: 0 auto;
+    background-color: #fff;
+}
+footer {
+    background-color:rgb(37, 37, 37);
+    height: 50px;
+    color: white;
+    text-align: center;
+    padding: 1.5em 0;
+    font-family: "Avenir", sans-serif;
+}
+@media only screen 
+and (min-width : 768px) 
+and (max-width : 1024px) { 
+    nav { height: 180px; }
+    nav li { 
+        display: block;
+        margin: 0 2em 2em; 
+    }
+    nav a:before { display: block; }
+    .parallax {
+        margin-top: 13em;
+    }
+    #mountain1, #mountain2, #mountain3, #mountain4 {
+        margin-top: -4em;
+        transform: none;
+    }
+    .mountain2-front {
+        height: 0vh;
+    }
+    .mountain-front {
+        height: 0vh;
+        margin-bottom: 1em;
+    }
+}
+
+@media only screen 
+and (min-width : 375px) 
+and (max-width : 667px) 
+{
+    nav { height: 180px; 
+    }
+    nav li { 
+        display: block;
+        margin: 0 2em 2em; 
+    } 
+    nav a { width: 100%;
+        padding-left: 0;
+    }
+    nav a:before { display: inline-block; }
+    .parallax {
+        margin-top: 20em;
+    }
+    #mountain1, #mountain2, #mountain3, #mountain4 {
+        margin-top: -4em;
+        transform: none;
+    }
+    .mountain2-front {
+        height: 0vh;
+    }
+    .mountain-front {
+        height: 0vh;
+        margin-bottom: 1em;
+    }
+    .parallax-text {
+        width: 90%;
+    }
+    blockquote {
+        width: 75%;
+        text-align: center;
+    }
+    h2 {
+        margin-bottom: 1em;
+    }
+}
+
+ 

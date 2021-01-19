@@ -1,0 +1,154 @@
+body {
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+}
+#wrapper {
+    width: 85%;
+    margin: 0 auto;
+}
+header {
+    color: white;
+    background-color: rgb(37, 37, 37);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    min-height: 10px;
+    z-index: 2;
+}
+a {
+    text-decoration: none;
+    font-weight: 800;
+    color: rgb(184, 184, 184);
+}
+a:hover{
+    color: #29ABE2;
+}
+h1 {
+     font-family: "Avenir", sans-serif;
+ }
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+main {
+     margin-top: 1em;
+     font-family: "Avenir", sans-serif;
+ }
+.columns {
+    margin-top: 14em;
+    margin-bottom: 2em;
+}
+article {
+     column-count: 3;
+     column-gap: 1.5em; 
+     font-size: 1em;
+}
+img {
+    border-radius: 80px;
+    margin: 0 auto;
+    width: 85%;
+    height: 85%;
+    padding: 40px;
+    margin-left: -.5em;
+   
+}
+img:hover {
+    transform: scale(1.1);
+    opacity: .8;
+    cursor: pointer;
+}
+.images {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    opacity: 0.80;
+    border-radius: 100px;
+    margin-bottom: 4em;
+    margin-left: -1em;
+}
+.images:hover {
+    transform: scale(1.1);
+    opacity: 1;
+    cursor: pointer;
+}
+blockquote {
+     column-span: all;
+     margin: 1em auto;
+     padding: 1em;
+     font-size: 2em;
+     border-bottom: 4px solid rgb(65, 147, 255);
+     border-top: 4px solid rgb(65, 147, 255);
+     border-radius: 8px;
+     max-width: 1300px;
+     text-align: center;
+     width: 85%;
+}
+footer {
+    background-color:rgb(37, 37, 37);
+    height: 50px;
+    color: white;
+    text-align: center;
+    padding: 1.5em 0;
+    font-family: "Avenir", sans-serif;
+}
+@media only screen 
+and (min-width : 768px) 
+and (max-width : 1024px) { 
+    main {
+        padding: 40px;
+    }
+    .columns {
+        margin-top: 18em;
+        margin-bottom: 1em;
+    }
+    #column-title {
+        margin-top: 7em;
+    }
+    blockquote {
+        padding: .5em;
+        font-size: 1.5em;
+        margin: 2em auto;
+    }
+    #link1 {
+        margin-top: -1em;
+        margin-bottom: 2em;
+    }
+    img {
+        margin-left: -1.3em;
+    }
+    .images {
+        margin-left: -1.4em;
+    }
+}
+
+@media only screen 
+and (min-width : 375px) 
+and (max-width : 667px) 
+{
+    article {
+        column-count: 1;
+    }
+    main {
+        padding: 40px;
+    }
+   .columns {
+        margin-top: 17em;
+        margin-bottom: -1em;
+    }
+    #column-title {
+        margin-top: 7em;
+    }  
+    blockquote {
+        width: 85%;
+        font-size: 1.5em;
+    } 
+    .images {
+        margin-bottom: 1em;
+        margin-top: -3em;
+        margin-left: -1.4em;
+    }
+    img {
+        margin-left: -1em;
+    }
+}
